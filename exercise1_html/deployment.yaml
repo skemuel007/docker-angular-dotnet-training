@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: html1
-          image: skemuel007/html
+          image: skemuel007/html:v1
           ports:
             - containerPort: 80
               protocol: TCP

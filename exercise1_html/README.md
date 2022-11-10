@@ -39,3 +39,48 @@ kubectl describe deployments html1
 kubectl get replicasets
 kubectl describe replicasets
 ```
+
+## Create a Service object that exposes the deployment:
+
+```bash
+kubectl expose deployment html1 --type=NodePort --name=html1-service
+```
+
+## Display information about the Service:
+
+```bash
+kubectl describe services html1-service
+```
+
+Make a note of the NodePort value for the service.
+
+## List pods running in html1
+
+```bash
+kubectl get pods --selector="run=html1" --output=wide
+```
+
+## Get cluster info
+
+```bash
+kubectl cluster-info
+```
+
+## Use the node address and node port to access the Hello World application:
+
+```bash
+curl http://<public-node-ip>:<node-port>
+```
+
+## To delete the Service, enter this command:
+
+```bash
+kubectl delete services example-service
+```
+
+## To delete the Deployment, the ReplicaSet, and the Pods that are running the Hello World application, enter this command:
+
+```bash
+kubectl delete deployment hello-world
+```
+
