@@ -8,7 +8,7 @@ docker build -t skemuel007/simple-html:v1 .
 
 ## Run the image
 ```bash
-docker run -d --name simple-html -p 3008:80 skemuel007/simple-html:v1
+docker run -d --name simple_html_v1 -p 3010:80 skemuel007/simple-html:v1
 ```
 
 ## List running containers
