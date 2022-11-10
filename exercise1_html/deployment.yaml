@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: html1
+spec:
+  selector:
+    matchLabels:
+      run: html1
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: html1
+    spec:
+      containers:
+        - name: html1
+          image: skemuel007/html
+          ports:
+            - containerPort: 80
+              protocol: TCP
