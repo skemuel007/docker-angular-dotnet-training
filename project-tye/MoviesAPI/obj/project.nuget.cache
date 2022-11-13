@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "d8+8e/i66DUMCjbUwed4iyRrl0Vd+UQ1snVZ/KBUM7Q/VFGMcfVZTZi0rxTmOLihadFKDCXbuiTiLnU9I5Mapw==",
+  "success": true,
+  "projectFilePath": "/Users/salvationlloydstanley-kemuel/Projects/docker/project-tye/MoviesAPI/MoviesAPI.csproj",
+  "expectedPackageFiles": [
+    "/Users/salvationlloydstanley-kemuel/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/salvationlloydstanley-kemuel/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/salvationlloydstanley-kemuel/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/salvationlloydstanley-kemuel/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/salvationlloydstanley-kemuel/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/salvationlloydstanley-kemuel/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
