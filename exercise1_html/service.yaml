@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: html1-service
+  namespace: html1
+spec:
+  selector:
+    app: html1
+  ports:
+  - protocol: TCP
+    port: 80
+    nodePort: 30002
+  type: NodePort

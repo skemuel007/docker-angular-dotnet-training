@@ -18,6 +18,9 @@ docker run -d --name simple_html_v1 -p 3010:80 skemuel007/simple-html:v1
 ## List running containers
 
 ```bash
+
+docker push skemuel007/simple-html:v1
+
 docker ps
 ```
 
@@ -83,4 +86,21 @@ kubectl delete services example-service
 ```bash
 kubectl delete deployment hello-world
 ```
+
+### To further debug issue
+```bash
+kubectl cluster-info dump
+```
+
+## Expose pod to localhost method 1
+
+```
+kubectl get pods
+
+kubectl port-forward html1-fb9c974b4-22t9g 3020:80
+
+curl -v http://localhost:3020
+```
+
+## Expose pod to localhost method 2
 
