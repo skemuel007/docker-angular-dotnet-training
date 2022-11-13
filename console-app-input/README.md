@@ -1,5 +1,19 @@
 # Docker for Dotnet
 
+## Create a console project with the following command
+
+### Step 1:
+
+```bash
+mkdir console-app-input && cd console-app-input
+```
+
+### Setp 2:
+
+```bash
+dotnet new console
+```
+
 ## Build image
 
 
@@ -31,5 +45,5 @@ docker system prune
 ## Run the image
 
 ```bash
-docker run -i skemuel/console-input-app:dev
+docker run -i skemuel007/console-input-app:dev
 ```

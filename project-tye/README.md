@@ -19,3 +19,17 @@ dotnet new sln
 ```bash
 docker build -t skemuel007/moviesapi:dev -f ./MoviesAPI/Dockerfile .
 ```
+
+## Docker run
+
+```bash
+docker run -d -p 5001:80 skemuel007/moviesapi:dev
+```
+
+### View files in container
+
+```bash
+docker ps 
+
+docker exec -it <containerid> [bash|bin/sh]
+```
