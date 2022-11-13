@@ -1,16 +1,21 @@
 using MoviesAPI;
 
-var builder = WebApplication.CreateBuilder(args);
+var  myAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
+var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddSingleton<MoviesService>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("CorsPolicy", policy =>
-    {
-        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
-    });
+    options.AddPolicy(name: myAllowSpecificOrigins,
+        policy  =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin(); 
+        });
 });
 
 builder.Services.AddControllers();
@@ -28,8 +33,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRouting();
 
-app.UseCors("CorsPolicy");
+app.UseCors(myAllowSpecificOrigins);
 
 app.UseAuthorization();
 
