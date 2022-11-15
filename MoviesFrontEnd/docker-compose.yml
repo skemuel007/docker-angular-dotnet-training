@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  moviesapi:
+    image: ${DOCKER-REGISTRY}moviesapi:dev
+    container_name: moviesapi
+
+  moviesapp:
+    image: ${DOCKER-REGISTRY}moviesapp:dev
+    container_name: moviesapp

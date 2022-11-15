@@ -15,6 +15,7 @@ export class AppComponent {
   constructor(private moviesService: MoviesService) { }
 
   ngOnInit() {
+    console.log('App component called');
     this.getMovies();
   }
 
